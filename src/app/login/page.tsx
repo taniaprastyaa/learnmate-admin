@@ -1,4 +1,5 @@
 import { LoginForm } from "@/components/login-form"
+import Link from "next/link"
 
 export default function LoginPage() {
   return (
@@ -10,7 +11,7 @@ export default function LoginPage() {
         style={{ pointerEvents: "none" }}
       />
       <div className="relative z-10 flex flex-col items-center w-full">
-        <a href="/" className="flex items-center gap-3 mb-8">
+        <Link href="/" className="flex items-center gap-3 mb-8">
           <img
             src="/img/learnmate-logo.png"
             alt="LearnMate Logo"
@@ -22,7 +23,7 @@ export default function LoginPage() {
           >
             LearnMate
           </span>
-        </a>
+        </Link>
         <LoginForm className="max-w-md w-full" />
       </div>
     </div>
