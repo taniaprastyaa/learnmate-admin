@@ -63,9 +63,18 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               asChild
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
-              <a href="#">
-                <IconInnerShadowTop className="!size-5" />
-                <span className="text-base font-semibold">Acme Inc.</span>
+              <a href="#" className="flex items-center gap-2">
+                <img
+                  src="/img/learnmate-logo.png"
+                  alt="LearnMate Logo"
+                  className="w-9 h-9 object-contain"
+                />
+                <span
+                  className="text-lg font-bold tracking-wide"
+                  style={{ color: "#EBA937" }}
+                >
+                  LearnMate
+                </span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
